@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    background: #151518;
+    overflow-x: hidden;
+}
+
+header{
+    height: 80vh;
+    width: 100%;
+}
+
+.nav-bg.uk-navbar-container:not(.uk-navbar-transparent){
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 30%);
+}
+
+.uk-logo img{
+    height: 35px;
+}
+.uk-navbar-nav li a{
+    text-transform: capitalize;
+}
+.uk-navbar-nav li.uk-active a{
+    color: #000000;
+    font-weight: bold;
+}
+nav{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.uk-dotnav>*>*, .uk-light .uk-dotnav>*>*{
+    border-radius: 25px;
+    width: 35px;
+    border: none;
+    background: rgba(145, 145, 145, 0.76);
+}
+
+.uk-slideshow-items:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(21, 21, 24, 0.31) 70%, #151518 );
+    z-index: 2;
+}
+.uk-slideshow-items > li{
+    padding: 0 20px;
+}
+.uk-slideshow-items > li div p{
+    color: white;
+}
+.uk-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve){
+    fill: orange;
+    stroke: none;
+}
+
+::selection{
+    background: red;
+    color: white;
+}
